@@ -1,0 +1,104 @@
+<ion-view title="Song Library"    >  
+    <ion-content>
+
+	
+	<div class="fluid-container container_decoration background_navi_blue" id="container_decoration" >
+
+
+	    <div class=" top_5">
+	    	<div class="song_container "  >
+	    		<!-- block 1 -->
+	    	<div class=" row row1 row_right_0" ng-repeat="document in SongListData" id="anchor{{NameSplit(document.Name)}}" >
+	    			<div class=" row row1 shown_div background_yellow box_shadow_1 " id="shown_div1"> 
+		    			<div class="col-xs-3 image_wrap " id="imgage_wrap1">
+		    				<img src="image/song_icon.jpg" class=" margin_top_10 width_60 " alt="icon">
+		    			</div>
+		    			<div class="col-xs-6" href="#pagetwo" >
+		    				<h4 class="song_name" onclick="myFunction()">{{document.Name}}</h4>
+		    				<p>{{document.Author}}</p>
+		    			</div>	
+		    			<div class="col-xs-3 background_green padding_25 margin_minus_6">
+		    				<div class="dropdown  text-center ">
+								<p class=" dropdown-toggle color_white " data-toggle="dropdown"  ng-click="Download('{{document.Id}}','{{document.Name}}')" onclick='uploadfile()' >DOWNLOAD</p>
+								
+						</div>
+		    			</div>
+	    			</div>
+
+	    		
+	    		</div>
+
+	    		
+	    	</div>	
+
+	    </div>	
+		
+
+	</div>
+    </ion-content>
+
+</ion-view>  
+<style>
+.scroll-content {
+
+    max-height: 1350px;
+}
+<!-- .side_bar {
+    position: fixed;
+	
+} -->
+.padding_25{
+	padding: 25px 0px; 
+}
+.row_right_0{
+	margin-left: 0px !important;
+}
+.row1{
+	margin: 0px 0px !important;
+
+}
+.side_bar{
+	right: 10px !important;
+    top: 45px;
+}
+.padding_5{
+	padding: 0px 3px !important;
+}
+</style>
+
+
+
+  	<div class="side_bar" >
+	    		
+					<ul class="list-group">
+					 	<li class="padding_5"> <a ng-click="gotoAnchor('A')" >A</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('B')" >B</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('C')">C</a></li>
+					 	<li class="padding_5"> <a  ng-click="gotoAnchor('D')" >D</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('E')" >E</a></li>
+					    <li class="padding_5"> <a ng-click="gotoAnchor('F')" >F</a></li>
+					    <li class="padding_5"> <a ng-click="gotoAnchor('G')" >G</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('H')" >H</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('I')" >I</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('J')" >J</a></li>
+					    <li class="padding_5"> <a ng-click="gotoAnchor('K')" >K</a></li>
+					 	<li class="padding_5"> <a  ng-click="gotoAnchor('L')"  >L</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('M')" >M</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('N')"  >N</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('0')"  >O</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('P')"  >P</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('Q')"  >Q</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('R')"  >R</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('S')"  >S</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('T')"  >T</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('U')"  >U</a></li>
+					    <li class="padding_5"> <a   ng-click="gotoAnchor('V')"  >V</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('W')" >W</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('X')" >X</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('Y')" >Y</a></li>
+					    <li class="padding_5"> <a  ng-click="gotoAnchor('Z')" >Z</a></li>
+						
+					</ul>
+				
+	    	</div>	
+

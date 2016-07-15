@@ -1,0 +1,42 @@
+<ion-view title="Session Calendar"   >  
+    <ion-content>
+    <div class="container-fluid">
+      <div class="sessions list"  >
+		<div class="row row2 background_blue item  itemsl shadow_bottom" ng-repeat="SessionList in SessionCalenderData">
+        <div class="col-lg-12 text-center color_white padding_20 ">
+           <h4 class="color_white">{{SessionList.Choir_Group_Name__c}} - {{DateSplit(SessionList.Date__c,0)}} </h4>
+
+           <p class="color_white"> {{Venue_Details__cSplit(SessionList.Venue_Details__c)}} {{SessionList.Time_Window__c}} </p>
+        </div>
+      </div>
+		<!-- <a class="item  itemsl text-center list-bg-6 shadow_bottom "   >
+        <h4>{{SessionList.Choir_Group_Name__c}} - {{DateSplit(SessionList.Date__c,0)}} </h4>
+
+		<p>	{{Venue_Details__cSplit(SessionList.Venue_Details__c)}} {{SessionList.Time_Window__c}} </p>
+		</a> -->
+		
+      </div>
+    </div>
+    <!-- /.container -->
+    
+  
+    </ion-content>
+</ion-view>
+	<style>
+	
+	.item h4 {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.itemsl, {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial !important;
+}
+.row2{
+	margin: 0px -10px !important;
+}
+</style>

@@ -1,0 +1,35 @@
+<ion-view title="Home"  hide-back-button="true" cache-view="false"  >  
+    <ion-content>
+	<div class="fluid-container">
+      <div class="sessions list">
+
+       <a class="item text-center list-bg-1 s_l" ng-click="SongList()">
+				<img class="img-responsive margin_auto "  src="image/song_library.png" alt="Song Library"></img>
+				<p class="fa_font fa_color_blue">SONG LIBRARY</p>
+		</a>
+
+        <a ng-click="BillingHistory()" class="item text-center list-bg-2 b_h">
+				<img class="img-responsive margin_auto "  src="image/payment_logo.png" alt="Payment"></img>
+				<p class="fa_font fa_color_blue">BILLING HISTORY</p>
+				</a>
+
+       <a ng-click="PersonalInfo()" class="item text-center list-bg-4 p_i">
+				<img class="img-responsive  margin_auto"   src="image/personal_info.png" alt="Personal Info"></img>
+				<p class="fa_font fa_color_blue">PERSONAL INFO</p>
+				</a>
+
+        <a ng-click="SessionCalender()" class="item text-center list-bg-3 s_c" >
+				<img class="img-responsive margin_auto"  src="image/calender_logo.png" alt="Calender"></img>
+				<p class="fa_font fa_color_blue" >SESSION CALENDAR</p>
+				</a>
+		
+		<a ng-click="logOut()" class="item text-center list-bg-4 log_out">
+				<img class="img-responsive margin_auto"  src="image/logout_menu.png" alt="Logout"></img>
+				<p class="fa_font fa_color_white" >LOGOUT</p>
+				</a>
+
+      </div>
+</div>
+    </ion-content>
+
+</ion-view>
